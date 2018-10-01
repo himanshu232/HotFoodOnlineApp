@@ -1,0 +1,72 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+19:47:42.0 (825026)|USER_INFO|[EXTERNAL]|0050O0000072vcM|himanshu232@hotmail.com|Greenwich Mean Time|GMT+01:00
+19:47:42.0 (915577)|EXECUTION_STARTED
+19:47:42.0 (927181)|CODE_UNIT_STARTED|[EXTERNAL]|01p0O00000BMBGp|HFO_HotFoodBrandTriggerTest.updateHotFoodBrandName()
+19:47:42.0 (1197012)|HEAP_ALLOCATE|[72]|Bytes:3
+19:47:42.0 (1259733)|HEAP_ALLOCATE|[77]|Bytes:152
+19:47:42.0 (1285089)|HEAP_ALLOCATE|[342]|Bytes:408
+19:47:42.0 (1314465)|HEAP_ALLOCATE|[355]|Bytes:408
+19:47:42.0 (1339846)|HEAP_ALLOCATE|[467]|Bytes:48
+19:47:42.0 (1378812)|HEAP_ALLOCATE|[139]|Bytes:6
+19:47:42.0 (1402658)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:17
+19:47:42.0 (1472056)|METHOD_ENTRY|[9]|01p0O00000BMBGp|HFO_HotFoodBrandTriggerTest.HFO_HotFoodBrandTriggerTest()
+19:47:42.0 (1484317)|STATEMENT_EXECUTE|[9]
+19:47:42.0 (1490098)|STATEMENT_EXECUTE|[9]
+19:47:42.0 (1519221)|METHOD_EXIT|[9]|HFO_HotFoodBrandTriggerTest
+19:47:42.0 (1637877)|HEAP_ALLOCATE|[50]|Bytes:5
+19:47:42.0 (1668808)|HEAP_ALLOCATE|[56]|Bytes:5
+19:47:42.0 (1681988)|HEAP_ALLOCATE|[64]|Bytes:7
+19:47:42.0 (1723432)|STATEMENT_EXECUTE|[13]
+19:47:42.0 (1726313)|STATEMENT_EXECUTE|[15]
+19:47:42.0 (1769950)|HEAP_ALLOCATE|[15]|Bytes:4
+19:47:42.0 (1888014)|VARIABLE_SCOPE_BEGIN|[15]|hfb|HotFoodBrand__c|true|false
+19:47:42.0 (1929492)|VARIABLE_ASSIGNMENT|[15]|hfb|{}|0x102003ef
+19:47:42.0 (1938778)|STATEMENT_EXECUTE|[16]
+19:47:42.0 (1943063)|HEAP_ALLOCATE|[16]|Bytes:10
+19:47:42.0 (2016049)|VARIABLE_ASSIGNMENT|[16]|this.Name|"Test Brand"|0x102003ef
+19:47:42.0 (2026488)|STATEMENT_EXECUTE|[17]
+19:47:42.0 (2059214)|HEAP_ALLOCATE|[17]|Bytes:8
+19:47:42.0 (2074956)|DML_BEGIN|[17]|Op:Insert|Type:HotFoodBrand__c|Rows:1
+19:47:42.0 (2108767)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+19:47:42.0 (31018104)|DML_END|[17]
+19:47:42.0 (31035533)|STATEMENT_EXECUTE|[18]
+19:47:42.0 (31040756)|HEAP_ALLOCATE|[18]|Bytes:13
+19:47:42.0 (31086397)|VARIABLE_ASSIGNMENT|[18]|this.Name|"My Test Brand"|0x102003ef
+19:47:42.0 (31094348)|STATEMENT_EXECUTE|[19]
+19:47:42.0 (31119717)|HEAP_ALLOCATE|[19]|Bytes:8
+19:47:42.0 (31128269)|DML_BEGIN|[19]|Op:Update|Type:HotFoodBrand__c|Rows:1
+19:47:42.0 (31150580)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+19:47:42.0 (59470832)|DML_END|[19]
+19:47:42.0 (59540790)|EXCEPTION_THROWN|[19]|System.DmlException: Update failed. First exception on row 0 with id a010O00002EWKtMQAX; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, HFO_HotFoodBrandTrigger: execution of BeforeUpdate
+
+caused by: line 8, column 27: Method does not exist or incorrect signature: void Run(HFO_HotFoodBrandTriggerHandler) from the type HFO_TriggerDispatcher: []
+19:47:42.0 (59785837)|HEAP_ALLOCATE|[19]|Bytes:331
+19:47:42.0 (59851050)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id a010O00002EWKtMQAX; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, HFO_HotFoodBrandTrigger: execution of BeforeUpdate
+
+caused by: line 8, column 27: Method does not exist or incorrect signature: void Run(HFO_HotFoodBrandTriggerHandler) from the type HFO_TriggerDispatcher: []
+
+Class.HFO_HotFoodBrandTriggerTest.updateHotFoodBrandName: line 19, column 1
+19:47:42.0 (59877426)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id a010O00002EWKtMQAX; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, HFO_HotFoodBrandTrigger: execution of BeforeUpdate
+
+caused by: line 8, column 27: Method does not exist or incorrect signature: void Run(HFO_HotFoodBrandTriggerHandler) from the type HFO_TriggerDispatcher: []
+
+Class.HFO_HotFoodBrandTriggerTest.updateHotFoodBrandName: line 19, column 1
+19:47:42.59 (59893683)|CUMULATIVE_LIMIT_USAGE
+19:47:42.59 (59893683)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:47:42.59 (59893683)|CUMULATIVE_LIMIT_USAGE_END
+
+19:47:42.0 (59952139)|CODE_UNIT_FINISHED|HFO_HotFoodBrandTriggerTest.updateHotFoodBrandName()
+19:47:42.0 (60808100)|EXECUTION_FINISHED

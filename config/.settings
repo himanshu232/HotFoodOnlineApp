@@ -1,0 +1,17 @@
+{
+    "projectName": "HotFoodOnline",
+    "username": "himanshu232@hotmail.com",
+    "id": "8463f130-ad63-11e8-89ba-b7a546488655",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://eu9.salesforce.com",
+    "workspace": "C:\\Temp\\Salesforce",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
